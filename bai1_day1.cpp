@@ -26,6 +26,7 @@ void so_lon_nhat(vector<int> cac_so, string tenfile)
             cac_vi_tri.push_back(i + 1);
         }
     }
+    dapan << "Bai 1" << endl ;
     dapan << "a: so lon nhat la : " << so_lon_nhat << endl;
     dapan << "   cac vi tri co so lon nhat la: ";
     for (int i = 0; i < cac_vi_tri.size(); i++)
