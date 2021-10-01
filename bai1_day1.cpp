@@ -152,7 +152,7 @@ void tinh_trung_binh_so_le(vector<int> cac_so, string tenfile)
     ofstream file_dap_an;
     file_dap_an.open(tenfile, ios_base::app);
     //khai bao bien
-    int tong_cac_so_le ;
+    int tong_cac_so_le =0;
     int so_cac_so_le =0 ;
     for(int i = 0; i < cac_so.size(); i++){
         if(cac_so[i] % 2 == 1 ){
