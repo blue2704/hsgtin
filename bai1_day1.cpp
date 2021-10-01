@@ -26,7 +26,7 @@ void so_lon_nhat(vector<int> cac_so, string tenfile)
             cac_vi_tri.push_back(i + 1);
         }
     }
-    dapan << "Bai 1" << endl ;
+    dapan << "Bai 1" <<endl;
     dapan << "a: so lon nhat la : " << so_lon_nhat << endl;
     dapan << "   cac vi tri co so lon nhat la: ";
     for (int i = 0; i < cac_vi_tri.size(); i++)
@@ -56,7 +56,7 @@ void tim_so_nguyen_to_lon_nhat(vector<int> cac_so, string tenfile)
     {
         //set gia tri prime true ban dau
         isPrime = true;
-        for (int k = 2; k < sqrt(cac_so[i]); k++)
+        for (int k = 2; k <= sqrt(cac_so[i]); k++)
         {
             if (cac_so[i] % k == 0)
             {
@@ -152,7 +152,7 @@ void tinh_trung_binh_so_le(vector<int> cac_so, string tenfile)
     ofstream file_dap_an;
     file_dap_an.open(tenfile, ios_base::app);
     //khai bao bien
-    int tong_cac_so_le =0;
+    int tong_cac_so_le ;
     int so_cac_so_le =0 ;
     for(int i = 0; i < cac_so.size(); i++){
         if(cac_so[i] % 2 == 1 ){
